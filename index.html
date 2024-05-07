@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ebe9e1;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #ec4074;
+        }
+
+        header {
+            background-color: #dfdac8;
+            color: whitesmoke;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .btn {
+            background-color: #e43d12;
+            color: white;
+            border: #e43d12;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .btn:hover {
+            background-color: #ff6347;
+        }
+
+        .main-content {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .table-container {
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            color: black; /* Change font color to black */
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        footer {
+            background-color: #ec4074;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="pngegg (5).png">
+            <h1>Welcome to Our First Webpage</h1>
+            <p class="info">Please press the button below for team details.</p>
+            <button id="teamBtn" class="btn">Show Team Data</button>
+        </div>
+    </header>
+    <footer>
+        <div class="container">
+            <button id="thankYouBtn" class="btn thank-you-btn">Thank You, Eng. Sara!</button>
+        </div>
+    </footer>
+    <audio id="buttonSound">
+        <source src="lhqwn-bjd.mp3">
+    </audio>
+    <script>
+        document.getElementById('teamBtn').addEventListener('click', function() {
+            var audio = document.getElementById('buttonSound');
+            audio.play();
+            window.location.href = 'phpfile.php'; // Redirect to team data page
+        });
+    </script>
+</body>
+</html>

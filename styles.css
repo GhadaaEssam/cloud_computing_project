@@ -1,0 +1,82 @@
+/* Add your CSS styles here */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ebe9e1;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #ec4074;
+}
+
+header {
+    background-color: #dfdac8;
+    color: whitesmoke;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.btn {
+    background-color: #e43d12;
+    color: white;
+    border: #e43d12;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.team-member {
+    text-align: center;
+    margin: 20px;
+    flex: 1 1 20%;
+}
+.profile-pic {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e43d12;
+}
+
+.id {
+    font-size: 16px;
+    color: #e43d12;
+}
+
+footer {
+    background-color: #ec4074;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
